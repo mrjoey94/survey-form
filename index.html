@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Street Fighter 6 Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+      <header class="header">
+          <h1 id="title">
+              Street Fighter Community Character Survey
+          </h1>
+          <p id="description">With Street Fighter 6 on the horizon, which characters you would like to see on the roster?
+          </p>
+      </header>
+      <form action="" id="survey-form">
+          <!--Text section  -->
+          <div class="form-group">
+              <label for="name" id="name-label">Name:</label>
+              <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+          </div>
+          <!-- end of text section-->
+
+          <!-- Type email section-->
+          <div class="form-group">
+              <label for="email" id="email-label">Email:</label>
+              <input type="email" name="email" id="email" class="formControl" placeholder="Enter your email" required>
+          </div>
+          <!-- end of type email section-->
+
+          <!-- Type age section-->
+          <div class="form-group">
+              <label for="age" id="number-label">Age: (optional)</label>
+              <input type="number" name="age" id="number" class="formControl" placeholder="Select age" min="12" max="99">
+          </div>
+          <!-- end of type age section-->
+
+          <!-- select section-->
+          <div class="form-group">
+              <p id="quest">Which gender do you identify as?</p>
+              <select name="gender-id" id="dropdown" class="formControl" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-Binary</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+              </select>
+          </div>
+          <!-- end of select section-->
+
+          <!-- radio button section-->
+          <div class="form-group">
+              <p id="quest">How would you describe your experience level with fighting games?</p>
+              <label for="">
+                <input type="radio" name="experience-level" value="beginner" class="inputRadio" checked>Beginner</label>
+                <input type="radio" name="experience-level" value="intermediate" class="inputRadio" checked>Intermediate</label>
+                <input type="radio" name="experience-level" value="experienced" class="inputRadio" checked>Experienced</label>
+                <input type="radio" name="experience-level" value="advanced" class="inputRadio" checked>Advanced</label>
+                <input type="radio" name="experience-level" value="unsure" class="inputRadio" checked>Unsure</label>
+              <!-- end of radio button section-->
+
+              <!-- checkbox section-->
+              <div class="form-group">
+                  <p id="quest">Pick which characters you would like to see in Street Fighter 6:</p>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="dudley">Dudley
+                  </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="poison">Poison
+              </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="rose">Rose
+              </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="makoto">Makoto
+              </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="birdie">Birdie
+              </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="urien">Urien
+              </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="alex">Alex
+              </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="falke">Falke
+              </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="cody">Cody
+              </label>
+                  <label for="">
+                <input type="checkbox" name="character" class="checkbox" value="laura">Laura
+              </label>
+              </div>
+              <!-- end of checkbox section-->
+
+              <!-- Textarea section-->
+              <p id="quest">Additional Feedback:</p>
+              <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter additional feedback here"></textarea>
+              <!-- end of textarea-->
+
+              <!-- submit button-->
+              <div class="form-group">
+                  <button type="submit" id="submit" class="btn">Submit</button>
+              </div>
+      </form>
+      </div>
+</body>
+
+</html>
